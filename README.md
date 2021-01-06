@@ -90,5 +90,3 @@ e aqui eu procuro ele e escolho o script da pasta Documentos.
 Por fim eu clico em OK e pronto. A partir de agora ele vai ser executado toda 6ª feira às 17h, semana sim semana não.
 
 Esse meu script que substitui o CCleaner pode ser atualizado e melhorado a qualquer momento, aonde ele pode ganhar novas funcionalidades, ter uma versão em PowerShell e também uma versão executável.
-
-Com isso, os alunos dos meus cursos podem postar no Fórum do BABOO suas ideias, sugestões e mudanças para melhorar ele, porque quanto mais completo e eficiente ele for, melhor para todos.
