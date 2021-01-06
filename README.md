@@ -3,6 +3,8 @@ Criado por Aurélio "Baboo"
 
 **Executar o Script como administrador.**
 
+[Vírus Total](https://www.virustotal.com/en/file/a62aa8843d3abb7308ac89cf1d109bf47073949a8e6fa77f12fe4c98e4d08d6a/analysis/)
+
 Leia a matéria completa [clicando aqui](https://www.baboo.com.br/windows-10/conteudo-essencial-windows/script-que-substitui-o-ccleaner/%3famp)
 
 Veja o vídeo [clicando aqui](https://www.youtube.com/watch?v=ybh0sXgzmXQ)
