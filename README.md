@@ -1,8 +1,6 @@
 # Script que substitui o CCleaner
 Criado por Aurélio "Baboo"
 
-Leia a matéria completa clicando [aqui](https://www.baboo.com.br/windows-10/conteudo-essencial-windows/script-que-substitui-o-ccleaner/%3famp)
-
 **Executar o Script como administrador.**
 
 Se você acompanha o meu trabalho e assiste os meus vídeos, você sabe que um dos motivos do Windows ficar lento com o tempo é o excesso de arquivos temporários que aumentam a fragmentação de arquivos no disco rígido ou SSD.
@@ -90,3 +88,5 @@ e aqui eu procuro ele e escolho o script da pasta Documentos.
 Por fim eu clico em OK e pronto. A partir de agora ele vai ser executado toda 6ª feira às 17h, semana sim semana não.
 
 Esse meu script que substitui o CCleaner pode ser atualizado e melhorado a qualquer momento, aonde ele pode ganhar novas funcionalidades, ter uma versão em PowerShell e também uma versão executável.
+
+Leia a matéria completa clicando [aqui](https://www.baboo.com.br/windows-10/conteudo-essencial-windows/script-que-substitui-o-ccleaner/%3famp)
