@@ -7,6 +7,6 @@ Criado por Aurélio "Baboo"
 
 ![](https://i.imgur.com/GvkFWI0.png) Leia a matéria completa [clicando aqui](https://www.baboo.com.br/windows-10/conteudo-essencial-windows/script-que-substitui-o-ccleaner/%3famp)
 
-![](https://i.imgur.com/NT7OAFK.png) Veja o vídeo [clicando aqui](https://www.youtube.com/watch?v=ybh0sXgzmXQ)
+![](https://i.imgur.com/toQwUZE.png) Veja o vídeo [clicando aqui](https://www.youtube.com/watch?v=ybh0sXgzmXQ)
 
 [![Script que substitui CCleaner para apagar arquivos temporários](https://i.imgur.com/On6I5gm.png)](https://www.youtube.com/watch?v=ybh0sXgzmXQ)
