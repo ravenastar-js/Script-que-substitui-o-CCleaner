@@ -9,4 +9,4 @@ Criado por Aurélio "Baboo"
 
 ![](https://i.imgur.com/toQwUZE.png) Veja o vídeo [clicando aqui](https://www.youtube.com/watch?v=ybh0sXgzmXQ)
 
-[![Script que substitui CCleaner para apagar arquivos temporários](https://i.imgur.com/On6I5gm.png)](https://www.youtube.com/watch?v=ybh0sXgzmXQ)
+![](https://i.imgur.com/SJMOiwY.png)
