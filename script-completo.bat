@@ -1,4 +1,4 @@
-REM @ SCRIPT PARA ELIMINA«√O DE ARQUIVOS TEMPOR¡RIOS
+REM @ SCRIPT PARA ELIMINA√á√ÉO DE ARQUIVOS TEMPOR√ÅRIOS
 REM @ BABOO 2020
 
 taskkill /F /IM "ccleaner64.exe"
@@ -6,7 +6,7 @@ taskkill /F /IM "ccleaner.exe"
 
 REM ******************** WINDOWS ********************
 
-REM Apaga todas as pastas tempor·rias e arquivos tempor·rios do usu·rio
+REM Apaga todas as pastas tempor√°rias e arquivos tempor√°rios do usu√°rio
 takeown /A /R /D Y /F C:\Users\%USERNAME%\AppData\Local\Temp\
 icacls C:\Users\%USERNAME%\AppData\Local\Temp\ /grant administradores:F /T /C
 rmdir /q /s C:\Users\%USERNAME%\AppData\Local\Temp\
@@ -65,7 +65,7 @@ rmdir /q /s C:\Users\%USERNAME%\AppData\Local\Microsoft\Edge\"User Data"\"Profil
 
 REM ******************** FIREFOX ********************
 taskkill /F /IM "firefox.exe"
-REM define qual È a pasta Profile do usu·rio e apaga os arquivos tempor·rios dali
+REM define qual √© a pasta Profile do usu√°rio e apaga os arquivos tempor√°rios dali
 set parentfolder=C:\Users\%USERNAME%\AppData\Local\Mozilla\Firefox\Profiles\
 for /f "tokens=*" %%a in ('"dir /b "%parentfolder%"|findstr ".*\.default-release""') do set folder=%%a
 del C:\Users\%USERNAME%\AppData\local\Mozilla\Firefox\Profiles\%folder%\cache2\entries\*.
@@ -163,4 +163,3 @@ rmdir /q /s C:\Users\%USERNAME%\AppData\Local\Google\Chrome\"User Data"\"Profile
 rmdir /q /s C:\Users\%USERNAME%\AppData\Local\Google\Chrome\"User Data"\"Profile 2"\Storage\ext\
 
 exit
-
