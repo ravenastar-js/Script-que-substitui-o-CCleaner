@@ -11,9 +11,9 @@
 
 ---
 
-1. Este script não altera a permissões das pastas como o script anterior fazia
+1. Este script não altera a permissões das pastas
 2. A remoção dos arquivos temporários dos navegadores é aplicada para TODOS os usuários dos navegadores
-3. Esse script remove mais arquivos dos navegadores do que o script anterior
+3. Esse script remove mais arquivos dos navegadores do que os scripts anteriores
 4. Esse script remove arquivos temporários do OneDrive
 5. Esse script também apaga arquivos da Lixeira e os arquivos temporários do Media Cache files da Adobe
 
