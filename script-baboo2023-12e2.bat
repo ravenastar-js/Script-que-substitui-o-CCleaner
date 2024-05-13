@@ -1,10 +1,10 @@
-REM | SCRIPT PARA ELIMINACAO DE ARQUIVOS TEMPORARIOS
+REM | SCRIPT PARA ELIMINAÇÃO DE ARQUIVOS TEMPORÁRIOS
 REM | da Lixeira, Windows, Logs, Navegadores e Adobe Media Cache
 REM | BABOO 2023 - www.baboo.com.br/script
 REM |
 REM | Versão 1.2e2 - 04/12/2023
-REM | - remocao de arquivos do Spotify
-REM | - remocao dos arquivos temporários de até 12 perfis dos navegadores Edge, Chrome e Vivaldi
+REM | - remoção de arquivos do Spotify
+REM | - remoção dos arquivos temporários de até 12 perfis dos navegadores Edge, Chrome e Vivaldi
 REM |
 REM | ***** IMPORTANTE *****
 REM | Embora o código desse script permita apagar arquivos temporários de TODOS
@@ -23,9 +23,9 @@ REM | dos demais usuários.
 REM |
 REM | *****    POWERSHELL    *****
 REM | Este script executa dois comandos simples no PowerShell. Embora eles funcionem
-REM | normalmente no Windows 10 e Windows 11, se voce utiliza Windows 7 ou 8
+REM | normalmente no Windows 10 e Windows 11, se você utiliza Windows 7 ou 8
 REM | atualize o PowerShell em https://bit.ly/instalar-powershell
-REM | 
+REM |
 
 REM ******************** LIXEIRA ********************
 del c:\$recycle.bin\* /s /q
