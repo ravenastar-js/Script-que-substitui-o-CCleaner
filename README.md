@@ -1,4 +1,4 @@
-# v1.2E2 - Script que substitui o CCleaner ( Script do BABOO versão 2023 )
+# v1.2E2 - Script que substitui o CCleaner ( Script do BABOO versão 3.2a de 23/05/2024 )
 
 > [!NOTE]  
 > EXECUTAR O SCRIPT COMO ADMINISTRADOR
