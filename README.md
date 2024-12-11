@@ -3,7 +3,7 @@
 > [!NOTE]  
 > EXECUTAR O SCRIPT COMO ADMINISTRADOR
 
-[➤ DOWNLOAD DIRETO](https://www.baboo.com.br/script/atual)
+[➤ DOWNLOAD DIRETO E ATUALIZADO](https://www.baboo.com.br/script/atual)
 
 ![](https://i.imgur.com/GvkFWI0.png) Leia a matéria completa [clicando aqui](https://www.baboo.com.br/tutorial-windows/script-do-baboo-para-apagar-arquivos-temporarios/)
 
