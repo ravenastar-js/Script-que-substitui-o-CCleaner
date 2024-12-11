@@ -13,20 +13,18 @@
 
 ---
 
-1. Este script não altera a permissões das pastas
-2. A remoção dos arquivos temporários dos navegadores é aplicada para TODOS os usuários dos navegadores
-3. Esse script remove mais arquivos dos navegadores do que os scripts anteriores
-4. Esse script remove arquivos temporários do OneDrive
-5. Esse script também apaga arquivos da Lixeira e os arquivos temporários do Media Cache files da Adobe
+Lista de arquivos que são removidos:
 
-Lista dos arquivos temporários que são apagados:
-- Lixeira
-- Pasta Windows/Temp
-- Arquivos de Log do Windows
-- Pastas dos arquivos temporários dos navegadores IE, Edge, Firefox, Chrome, Brave e Vivaldi
-- Pasta dos arquivos temporários do OneDrive
-- Pasta com arquivos temporários do Media Cache files da Adobe
-- Pasta com arquivos temporários de músicas do Spotify
+– Lixeira
+– Pasta Windows/Temp
+– Pasta de arquivos temporários de todos os usuários
+– Arquivos de Log do Windows (Eventos e Minidump permanecem)
+– Arquivos temporários dos primeiros 12 perfis dos navegadores Edge, Firefox, Chrome, Brave, Vivaldi e IE (cookies, histórico e senhas permanecem)
+– Arquivos temporários do OneDrive
+– Arquivos temporários do Media Cache files da Adobe
+– Arquivos temporários do VMWare
+– Arquivos temporários do TeamViewer
+– Arquivos temporários de músicas do Spotify
 
 > [!IMPORTANT]  
 > Embora o código desse script permita apagar arquivos temporários de TODOS os usuários cadastrados no Windows, isso acontece SOMENTE se o usuário atual tiver acesso irrestrito às pastas dos demais usuários dentro de C:\Users. Se o usuário atual não consegue acessar as pastas dos demais usuários dentro de C:\Users, este script apaga apenas os arquivos temporários do usuário atual.Isso acontece apenas por questão de segurança, pois a remoção dos arquivos temporários dos demais usuários exige a mudança nas permissões de centenas ou milhares de pastas e arquivos dentro de C:\Usuarios.
