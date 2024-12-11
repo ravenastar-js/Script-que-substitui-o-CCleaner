@@ -3,7 +3,7 @@
 > [!NOTE]  
 > EXECUTAR O SCRIPT COMO ADMINISTRADOR
 
-![](https://i.imgur.com/GvkFWI0.png) Leia a matéria completa [clicando aqui](https://www.baboo.com.br/windows-10/conteudo-essencial-windows/script-que-substitui-o-ccleaner/%3famp)
+![](https://i.imgur.com/GvkFWI0.png) Leia a matéria completa [clicando aqui](https://www.baboo.com.br/tutorial-windows/script-do-baboo-para-apagar-arquivos-temporarios/)
 
 ![](https://i.imgur.com/toQwUZE.png) Veja o vídeo [clicando aqui](https://www.youtube.com/watch?v=ybh0sXgzmXQ)
 
