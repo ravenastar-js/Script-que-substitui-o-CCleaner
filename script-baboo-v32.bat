@@ -1,31 +1,34 @@
-REM | SCRIPT PARA ELIMINAÇÃO DE ARQUIVOS TEMPORÁRIOS
+REM | SCRIPT PARA ELIMINACAO DE ARQUIVOS TEMPORARIOS
 REM | da Lixeira, Windows, Logs, Navegadores e Adobe Media Cache
-REM | BABOO 2023 - www.baboo.com.br/script
+REM | BABOO 2024 - www.baboo.com.br/script
 REM |
-REM | Versão 1.2e2 - 04/12/2023
-REM | - remoção de arquivos do Spotify
-REM | - remoção dos arquivos temporários de até 12 perfis dos navegadores Edge, Chrome e Vivaldi
+REM | Versão 3.2 - 23/05/2024
+REM | - remocao de arquivos do Spotify
+REM | - remocao de arquivos de log do OneDrive
+REM | - remocao de arquivos temporários do VMWare
+REM | - remocao de arquivos temporários do TeamViewer
+REM | - remocao dos arquivos temporários de até 12 perfis dos navegadores Edge, Chrome e Vivaldi
 REM |
-REM | ***** IMPORTANTE *****
-REM | Embora o código desse script permita apagar arquivos temporários de TODOS
-REM | os usuários cadastrados no Windows, isso acontece SOMENTE se o usuário atual
-REM | tiver acesso irrestrito às pastas dos demais usuários dentro de C:\Users.
+REM | *****   IMPORTANTE   *****
+REM | Embora o codigo desse script permita apagar arquivos temporarios de TODOS
+REM | os usuarios cadastrados no Windows, isso acontece SOMENTE se o usuario atual
+REM | tiver acesso irrestrito às pastas dos demais usuarios dentro de C:\Users. 
 REM | 
-REM | Se o usuário atual não consegue acessar as pastas dos demais usuários dentro
-REM | de C:\Users, este script apaga SOMENTE os arquivos temporários do usuário atual.
+REM | Se o usuario atual não consegue acessar as pastas dos demais usuarios dentro
+REM | de C:\Users, este script apaga SOMENTE os arquivos temporarios do usuario atual.
 REM | 
-REM | Isso acontece apenas *por questão de segurança*, pois a remoção dos arquivos
-REM | temporários dos demais usuários exige a mudança nas permissões de 
-REM | centenas ou milhares de pastas e arquivos dentro de C:\Usuários.
-REM | Além dessa tarefa ser lenta, isso permitiria que o usuário atual também pudesse
-REM | acessar aqueles arquivos, colocando em risco a segurança e privacidade dos dados
-REM | dos demais usuários.
+REM | Isso acontece apenas *por questao de seguranca*, pois a remocao dos arquivos
+REM | temporarios dos demais usuarios exige a mudança nas permissoes de 
+REM | centenas ou milhares de pastas e arquivos dentro de C:\Usuarios. 
+REM | Alem dessa tarefa ser lenta, isso permitiria que o usuario atual tambem pudesse
+REM | acessar aqueles arquivos, colocando em risco a seguranca e privacidade dos dados
+REM | dos demais usuarios.
 REM |
 REM | *****    POWERSHELL    *****
 REM | Este script executa dois comandos simples no PowerShell. Embora eles funcionem
-REM | normalmente no Windows 10 e Windows 11, se você utiliza Windows 7 ou 8
+REM | normalmente no Windows 10 e Windows 11, se voce utiliza Windows 7 ou 8
 REM | atualize o PowerShell em https://bit.ly/instalar-powershell
-REM |
+REM | 
 
 REM ******************** LIXEIRA ********************
 del c:\$recycle.bin\* /s /q
@@ -61,7 +64,6 @@ REM Apaga arquivo vazio.txt dentro da pasta \Windows\Temp
 del c:\Windows\Temp\vazio.txt
 
 REM ******************** ARQUIVOS DE LOG DO WINDOWS ********************
-
 del C:\Windows\Logs\cbs\*.log
 del C:\Windows\setupact.log
 attrib -s c:\windows\logs\measuredboot\*.*
@@ -82,6 +84,7 @@ del C:\Windows\logs\*.log /s /q
 del C:\Windows\SoftwareDistribution\*.log /s /q
 del C:\Windows\Microsoft.NET\*.log /s /q
 
+REM ******************** ARQUIVOS DE LOG DO ONEDRIVE ********************
 taskkill /F /IM "OneDrive.exe"
 for /d %%F in (C:\Users\*) do del %%F\AppData\Local\Microsoft\OneDrive\setup\logs\*.log /s /q
 for /d %%F in (C:\Users\*) do del %%F\AppData\Local\Microsoft\OneDrive\*.odl /s /q
@@ -336,13 +339,29 @@ for /d %%F in (C:\Users\*) do del %%F\AppData\Local\Vivaldi\"User Data"\BrowserM
 for /d %%F in (C:\Users\*) do del %%F\AppData\Local\Vivaldi\"User Data"\crash*.pma /s /q
 
 REM ******************** SPOTIFY ********************
-
 for /d %%F in (C:\Users\*) do del %%F\AppData\Local\Spotify\Data\*.file /s /q
 for /d %%F in (C:\Users\*) do del %%F\AppData\Local\Spotify\Browser\Cache\"Cache_Data"\f*. /s /q
 for /d %%F in (C:\Users\*) do del %%F\AppData\Local\Spotify\Browser\GPUCache\*. /s /q
 
 REM ******************** ADOBE MEDIA CACHE FILES ********************
-
 for /d %%F in (C:\Users\*) do del %%F\AppData\Roaming\Adobe\Common\"Media Cache files"\*.* /s /q
+for /d %%F in (C:\Users\*) do del %%F\AppData\Roaming\Adobe\*.log /s /q
+
+REM ******************** VMWARE ********************
+del C:\ProgramData\VMware\logs\*.log /s /q
+
+REM ******************** TeamViewer ********************
+for /l %%i in (1,1,12) do (for /d %%F in (C:\Users\*) do del %%F\AppData\Local\TeamViewer\EdgeBrowserControl\Persistent\data_*.  /s /q)
+for /d %%u in (C:\Users\*) do (if exist "%%u\AppData\Local\TeamViewer\EdgeBrowserControl" (forfiles /P "%%u\AppData\Local\TeamViewer\EdgeBrowserControl" /S /M *_0 /C "cmd /c del @path"))
+for /d %%u in (C:\Users\*) do (if exist "%%u\AppData\Local\TeamViewer\EdgeBrowserControl" (forfiles /P "%%u\AppData\Local\TeamViewer\EdgeBrowserControl" /S /M *_1 /C "cmd /c del @path"))
+for /d %%u in (C:\Users\*) do (if exist "%%u\AppData\Local\TeamViewer\EdgeBrowserControl" (forfiles /P "%%u\AppData\Local\TeamViewer\EdgeBrowserControl" /S /M *_2 /C "cmd /c del @path"))
+for /d %%u in (C:\Users\*) do (if exist "%%u\AppData\Local\TeamViewer\EdgeBrowserControl" (forfiles /P "%%u\AppData\Local\TeamViewer\EdgeBrowserControl" /S /M *_3 /C "cmd /c del @path"))
+for /d %%u in (C:\Users\*) do (if exist "%%u\AppData\Local\TeamViewer\EdgeBrowserControl" (forfiles /P "%%u\AppData\Local\TeamViewer\EdgeBrowserControl" /S /M *_4 /C "cmd /c del @path"))
+for /d %%u in (C:\Users\*) do (if exist "%%u\AppData\Local\TeamViewer\EdgeBrowserControl" (forfiles /P "%%u\AppData\Local\TeamViewer\EdgeBrowserControl" /S /M *_5 /C "cmd /c del @path"))
+for /d %%u in (C:\Users\*) do (if exist "%%u\AppData\Local\TeamViewer\EdgeBrowserControl" (forfiles /P "%%u\AppData\Local\TeamViewer\EdgeBrowserControl" /M "f_*." /C "cmd /c del @path"))
+for /d %%u in (C:\Users\*) do (if exist "%%u\AppData\Local\TeamViewer\EdgeBrowserControl" (forfiles /P "%%u\AppData\Local\TeamViewer\EdgeBrowserControl" /M "data.*" /C "cmd /c del @path"))
+for /d %%u in (C:\Users\*) do (if exist "%%u\AppData\Local\TeamViewer\EdgeBrowserControl" (forfiles /P "%%u\AppData\Local\TeamViewer\EdgeBrowserControl" /M "index.*" /C "cmd /c del @path"))
+
 
 exit
+
