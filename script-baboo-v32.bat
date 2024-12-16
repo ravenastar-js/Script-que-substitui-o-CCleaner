@@ -155,9 +155,9 @@ for /l %%i in (1,1,12) do (for /d %%F in (C:\Users\*) do del %%F\AppData\Local\M
 for /d %%F in (C:\Users\*) do del %%F\AppData\Local\Microsoft\Edge\"User Data"\Default\"Service Worker"\CacheStorage\*. /s /q
 for /d %%F in (C:\Users\*) do del %%F\AppData\Local\Microsoft\Edge\"User Data"\"Guest Profile"\"Service Worker"\CacheStorage\*. /s /q
 for /l %%i in (1,1,12) do (for /d %%F in (C:\Users\*) do del %%F\AppData\Local\Microsoft\Edge\"User Data"\"Profile %%i"\"Service Worker"\CacheStorage\*. /s /q)
-for /d %%F in (C:\Users\*) do robocopy %%F\AppData\Local\Microsoft\Edge\"User Data"\Default\"Service Worker"\CacheStorage\ %%F\AppData\Local\Microsoft\Edge\"User Data"\Default\"Service Worker"\CacheStorage\ /s /move /NFL /NDL /NJH /NJS /nc /ns /np
-for /d %%F in (C:\Users\*) do robocopy %%F\AppData\Local\Microsoft\Edge\"User Data"\"Guest Profile"\"Service Worker"\CacheStorage\ %%F\AppData\Local\Microsoft\Edge\"User Data"\"Guest Profile"\"Service Worker"\CacheStorage\ /s /move /NFL /NDL /NJH /NJS /nc /ns /np
-for /l %%i in (1,1,12) do (for /d %%F in (C:\Users\*) do robocopy %%F\AppData\Local\Microsoft\Edge\"User Data"\"Profile %%i"\"Service Worker"\CacheStorage\ %%F\AppData\Local\Microsoft\Edge\"User Data"\"Profile %%i"\"Service Worker"\CacheStorage\ /s /move /NFL /NDL /NJH /NJS /nc /ns /np)
+for /d %%F in (C:\Users\*) do robocopy "%%F\AppData\Local\Microsoft\Edge\User Data\Default\Service Worker\CacheStorage\ " "%%F\AppData\Local\Microsoft\Edge\User Data\Default\Service Worker\CacheStorage\ " /s /move /NFL /NDL /NJH /NJS /nc /ns /np
+for /d %%F in (C:\Users\*) do robocopy "%%F\AppData\Local\Microsoft\Edge\User Data\Guest Profile\Service Worker\CacheStorage\ " "%%F\AppData\Local\Microsoft\Edge\User Data\Guest Profile\Service Worker\CacheStorage\ " /s /move /NFL /NDL /NJH /NJS /nc /ns /np
+for /l %%i in (1,1,12) do (for /d %%F in (C:\Users\*) do robocopy "%%F\AppData\Local\Microsoft\Edge\User Data\Profile %%i\Service Worker\CacheStorage\ " "%%F\AppData\Local\Microsoft\Edge\User Data\Profile %%i\Service Worker\CacheStorage\ " /s /move /NFL /NDL /NJH /NJS /nc /ns /np)
 for /d %%F in (C:\Users\*) do del %%F\AppData\Local\Microsoft\Edge\"User Data"\Default\"Service Worker"\Database\*. /s /q
 for /d %%F in (C:\Users\*) do del %%F\AppData\Local\Microsoft\Edge\"User Data"\"Guest Profile"\"Service Worker"\Database\*. /s /q
 for /l %%i in (1,1,12) do (for /d %%F in (C:\Users\*) do del %%F\AppData\Local\Microsoft\Edge\"User Data"\"Profile %%i"\"Service Worker"\Database\*. /s /q)
@@ -228,9 +228,9 @@ for /l %%i in (1,1,12) do (for /d %%F in (C:\Users\*) do del %%F\AppData\Local\G
 for /d %%F in (C:\Users\*) do del %%F\AppData\Local\Google\Chrome\"User Data"\Default\"Service Worker"\Database\*.log /s /q
 for /d %%F in (C:\Users\*) do del %%F\AppData\Local\Google\Chrome\"User Data"\"Guest Profile"\"Service Worker"\Database\*.log /s /q
 for /l %%i in (1,1,12) do (for /d %%F in (C:\Users\*) do del %%F\AppData\Local\Google\Chrome\"User Data"\"Profile %%i"\"Service Worker"\Database\*.log /s /q)
-for /d %%F in (C:\Users\*) do robocopy %%F\AppData\Local\Google\Chrome\"User Data"\Default\"Service Worker"\CacheStorage\ %%F\AppData\Local\Google\Chrome\"User Data"\Default\"Service Worker"\CacheStorage\ /s /move /NFL /NDL /NJH /NJS /nc /ns /np
-for /d %%F in (C:\Users\*) do robocopy %%F\AppData\Local\Google\Chrome\"User Data"\"Guest Profile"\"Service Worker"\CacheStorage\ %%F\AppData\Local\Google\Chrome\"User Data"\"Profile 1"\"Service Worker"\CacheStorage\ /s /move /NFL /NDL /NJH /NJS /nc /ns /np
-for /l %%i in (1,1,12) do (for /d %%F in (C:\Users\*) do robocopy %%F\AppData\Local\Google\Chrome\"User Data"\"Profile %%i"\"Service Worker"\CacheStorage\ %%F\AppData\Local\Google\Chrome\"User Data"\"Profile %%i"\"Service Worker"\CacheStorage\ /s /move /NFL /NDL /NJH /NJS /nc /ns /np)
+for /d %%F in (C:\Users\*) do robocopy "%%F\AppData\Local\Google\Chrome\User Data\Default\Service Worker\CacheStorage\ " "%%F\AppData\Local\Google\Chrome\User Data\Default\Service Worker\CacheStorage\ " /s /move /NFL /NDL /NJH /NJS /nc /ns /np
+for /d %%F in (C:\Users\*) do robocopy "%%F\AppData\Local\Google\Chrome\User Data\Guest Profile\Service Worker\CacheStorage\ " "%%F\AppData\Local\Google\Chrome\User Data\Profile 1\Service Worker\CacheStorage\ " /s /move /NFL /NDL /NJH /NJS /nc /ns /np
+for /l %%i in (1,1,12) do (for /d %%F in (C:\Users\*) do robocopy "%%F\AppData\Local\Google\Chrome\User Data\Profile %%i\Service Worker\CacheStorage\ " "%%F\AppData\Local\Google\Chrome\User Data\Profile %%i\Service Worker\CacheStorage\ " /s /move /NFL /NDL /NJH /NJS /nc /ns /np)
 for /d %%F in (C:\Users\*) do del %%F\AppData\Local\Google\Chrome\"User Data"\Default\"Service Worker"\Database\*. /s /q
 for /d %%F in (C:\Users\*) do del %%F\AppData\Local\Google\Chrome\"User Data"\"Guest Profile"\"Service Worker"\Database\*. /s /q
 for /l %%i in (1,1,12) do (for /d %%F in (C:\Users\*) do del %%F\AppData\Local\Google\Chrome\"User Data"\"Profile %%i"\"Service Worker"\Database\*. /s /q)
@@ -272,8 +272,8 @@ for /d %%F in (C:\Users\*) do del %%F\AppData\Local\BraveSoftware\Brave-Browser\
 for /d %%F in (C:\Users\*) do del %%F\AppData\Local\BraveSoftware\Brave-Browser\"User Data"\"Guest Profile"\"Service Worker"\CacheStorage\*. /s /q
 for /d %%F in (C:\Users\*) do del %%F\AppData\Local\BraveSoftware\Brave-Browser\"User Data"\Default\"Service Worker"\Database\*.log /s /q
 for /d %%F in (C:\Users\*) do del %%F\AppData\Local\BraveSoftware\Brave-Browser\"User Data"\"Guest Profile"\"Service Worker"\Database\*.log /s /q
-for /d %%F in (C:\Users\*) do robocopy %%F\AppData\Local\BraveSoftware\Brave-Browser\"User Data"\Default\"Service Worker"\CacheStorage\ %%F\AppData\Local\BraveSoftware\Brave-Browser\"User Data"\Default\"Service Worker"\CacheStorage\ /s /move /NFL /NDL /NJH /NJS /nc /ns /np
-for /d %%F in (C:\Users\*) do robocopy %%F\AppData\Local\BraveSoftware\Brave-Browser\"User Data"\"Guest Profile"\"Service Worker"\CacheStorage\ %%F\AppData\Local\BraveSoftware\Brave-Browser\"User Data"\"Profile 1"\"Service Worker"\CacheStorage\ /s /move /NFL /NDL /NJH /NJS /nc /ns /np
+for /d %%F in (C:\Users\*) do robocopy "%%F\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\Service Worker\CacheStorage\  " "%%F\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\Service Worker\CacheStorage\  " /s /move /NFL /NDL /NJH /NJS /nc /ns /np
+for /d %%F in (C:\Users\*) do robocopy "%%F\AppData\Local\BraveSoftware\Brave-Browser\User Data\Guest Profile\Service Worker\CacheStorage\  " "%%F\AppData\Local\BraveSoftware\Brave-Browser\User Data\Profile 1\Service Worker\CacheStorage\  " /s /move /NFL /NDL /NJH /NJS /nc /ns /np
 for /d %%F in (C:\Users\*) do del %%F\AppData\Local\BraveSoftware\Brave-Browser\"User Data"\Default\"Service Worker"\Database\*. /s /q
 for /d %%F in (C:\Users\*) do del %%F\AppData\Local\BraveSoftware\Brave-Browser\"User Data"\"Guest Profile"\"Service Worker"\Database\*. /s /q
 for /d %%F in (C:\Users\*) do del %%F\AppData\Local\BraveSoftware\Brave-Browser\"User Data"\Default\"Service Worker"\ScriptCache\*. /s /q
@@ -326,9 +326,9 @@ for /l %%i in (1,1,12) do (for /d %%F in (C:\Users\*) do del %%F\AppData\Local\V
 for /d %%F in (C:\Users\*) do del %%F\AppData\Local\Vivaldi\"User Data"\Default\"Service Worker"\Database\*.log /s /q
 for /d %%F in (C:\Users\*) do del %%F\AppData\Local\Vivaldi\"User Data"\"Guest Profile"\"Service Worker"\Database\*.log /s /q
 for /l %%i in (1,1,12) do (for /d %%F in (C:\Users\*) do del %%F\AppData\Local\Vivaldi\"User Data"\"Profile %%i"\"Service Worker"\Database\*.log /s /q)
-for /d %%F in (C:\Users\*) do robocopy %%F\AppData\Local\Vivaldi\"User Data"\Default\"Service Worker"\CacheStorage\ %%F\AppData\Local\Vivaldi\"User Data"\Default\"Service Worker"\CacheStorage\ /s /move /NFL /NDL /NJH /NJS /nc /ns /np
-for /d %%F in (C:\Users\*) do robocopy %%F\AppData\Local\Vivaldi\"User Data"\"Guest Profile"\"Service Worker"\CacheStorage\ %%F\AppData\Local\Vivaldi\"User Data"\"Profile 1"\"Service Worker"\CacheStorage\ /s /move /NFL /NDL /NJH /NJS /nc /ns /np
-for /l %%i in (1,1,12) do (for /d %%F in (C:\Users\*) do robocopy %%F\AppData\Local\Vivaldi\"User Data"\"Profile %%i"\"Service Worker"\CacheStorage\ %%F\AppData\Local\Vivaldi\"User Data"\"Profile %%i"\"Service Worker"\CacheStorage\ /s /move /NFL /NDL /NJH /NJS /nc /ns /np)
+for /d %%F in (C:\Users\*) do robocopy "%%F\AppData\Local\Vivaldi\User Data\Default\Service Worker\CacheStorage\ " "%%F\AppData\Local\Vivaldi\User Data\Default\Service Worker\CacheStorage\ " /s /move /NFL /NDL /NJH /NJS /nc /ns /np
+for /d %%F in (C:\Users\*) do robocopy "%%F\AppData\Local\Vivaldi\User Data\Guest Profile\Service Worker\CacheStorage\ " "%%F\AppData\Local\Vivaldi\User Data\Profile 1\Service Worker\CacheStorage\ " /s /move /NFL /NDL /NJH /NJS /nc /ns /np
+for /l %%i in (1,1,12) do (for /d %%F in (C:\Users\*) do robocopy "%%F\AppData\Local\Vivaldi\User Data\Profile %%i\Service Worker\CacheStorage\ " "%%F\AppData\Local\Vivaldi\User Data\Profile %%i\Service Worker\CacheStorage\ " /s /move /NFL /NDL /NJH /NJS /nc /ns /np)
 for /d %%F in (C:\Users\*) do del %%F\AppData\Local\Vivaldi\"User Data"\Default\"Service Worker"\Database\*. /s /q
 for /d %%F in (C:\Users\*) do del %%F\AppData\Local\Vivaldi\"User Data"\"Guest Profile"\"Service Worker"\Database\*. /s /q
 for /l %%i in (1,1,12) do (for /d %%F in (C:\Users\*) do del %%F\AppData\Local\Vivaldi\"User Data"\"Profile %%i"\"Service Worker"\Database\*. /s /q)
@@ -364,4 +364,3 @@ for /d %%u in (C:\Users\*) do (if exist "%%u\AppData\Local\TeamViewer\EdgeBrowse
 
 
 exit
-
