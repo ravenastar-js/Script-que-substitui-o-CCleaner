@@ -109,6 +109,35 @@ for /d %%F in (C:\Users\*) do del %%F\AppData\Local\Microsoft\Windows\INetCache\
 for /d %%F in (C:\Users\*) do del %%F\AppData\Local\Microsoft\Windows\INetCache\Low\*.jpg /s /q
 for /d %%F in (C:\Users\*) do robocopy %%F\AppData\Local\Microsoft\Windows\INetCache\IE\ /s /move /NFL /NDL /NJH /NJS /nc /ns /np
 
+REM ******************* Discord *******************
+
+taskkill /F /IM "Discord.exe"
+
+for /d %%U in (C:\Users\*) do (
+    del %%U\AppData\Roaming\discord\Cache\* /s /q
+    del %%U\AppData\Roaming\discord\"Code Cache"\* /s /q
+    del %%U\AppData\Roaming\discord\GPUCache\* /s /q
+)
+
+REM ******************* Discord PTB *******************
+
+taskkill /F /IM "DiscordPTB.exe"
+
+for /d %%U in (C:\Users\*) do (
+    del %%U\AppData\Roaming\discordptb\Cache\* /s /q
+    del %%U\AppData\Roaming\discordptb\"Code Cache"\* /s /q
+    del %%U\AppData\Roaming\discordptb\GPUCache\* /s /q
+)
+
+REM ******************* Discord Canary *******************
+taskkill /F /IM "DiscordCanary.exe"
+
+for /d %%U in (C:\Users\*) do (
+    del %%U\AppData\Roaming\discordcanary\Cache\* /s /q
+    del %%U\AppData\Roaming\discordcanary\"Code Cache"\* /s /q
+    del %%U\AppData\Roaming\discordcanary\GPUCache\* /s /q
+)
+
 REM ******************** EDGE ********************
 taskkill /F /IM "msedge.exe"
 
