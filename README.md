@@ -30,3 +30,15 @@ Lista de arquivos que são removidos:
 > Embora o código desse script permita apagar arquivos temporários de TODOS os usuários cadastrados no Windows, isso acontece SOMENTE se o usuário atual tiver acesso irrestrito às pastas dos demais usuários dentro de C:\Users. Se o usuário atual não consegue acessar as pastas dos demais usuários dentro de C:\Users, este script apaga apenas os arquivos temporários do usuário atual.Isso acontece apenas por questão de segurança, pois a remoção dos arquivos temporários dos demais usuários exige a mudança nas permissões de centenas ou milhares de pastas e arquivos dentro de C:\Usuarios.
 > 
 > Além dessa tarefa ser lenta, isso permitiria que o usuário atual também pudesse acessar aqueles arquivos, colocando em risco a segurança e privacidade dos dados dos demais usuários.
+
+---
+
+### O script em questão foi retirado do seguinte site:
+
+🌐 https://www.baboo.com.br/script
+
+📌 Não pretendo realizar nenhuma modificação no script. Ele foi copiado integralmente do site original.
+
+💡 **Quer contribuir com o script?** Entre em contato com o proprietário do script, enviando uma mensagem para o e-mail 📧 `aurelio@baboo.com.br`
+
+🔗 [www.baboo.com.br/baboo](https://www.baboo.com.br/baboo)
