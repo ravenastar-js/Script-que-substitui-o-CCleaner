@@ -15,16 +15,16 @@
 
 Lista de arquivos que são removidos:
 
-– Lixeira
-– Pasta Windows/Temp
-– Pasta de arquivos temporários de todos os usuários
-– Arquivos de Log do Windows (Eventos e Minidump permanecem)
-– Arquivos temporários dos primeiros 12 perfis dos navegadores Edge, Firefox, Chrome, Brave, Vivaldi e IE (cookies, histórico e senhas permanecem)
-– Arquivos temporários do OneDrive
-– Arquivos temporários do Media Cache files da Adobe
-– Arquivos temporários do VMWare
-– Arquivos temporários do TeamViewer
-– Arquivos temporários de músicas do Spotify
+- Lixeira
+- Pasta Windows/Temp
+- Pasta de arquivos temporários de todos os usuários
+- Arquivos de Log do Windows (Eventos e Minidump permanecem)
+- Arquivos temporários dos primeiros 12 perfis dos navegadores Edge, Firefox, Chrome, Brave, Vivaldi e IE (cookies, histórico e senhas permanecem)
+- Arquivos temporários do OneDrive
+- Arquivos temporários do Media Cache files da Adobe
+- Arquivos temporários do VMWare
+- Arquivos temporários do TeamViewer
+- Arquivos temporários de músicas do Spotify
 
 > [!IMPORTANT]  
 > Embora o código desse script permita apagar arquivos temporários de TODOS os usuários cadastrados no Windows, isso acontece SOMENTE se o usuário atual tiver acesso irrestrito às pastas dos demais usuários dentro de C:\Users. Se o usuário atual não consegue acessar as pastas dos demais usuários dentro de C:\Users, este script apaga apenas os arquivos temporários do usuário atual.Isso acontece apenas por questão de segurança, pois a remoção dos arquivos temporários dos demais usuários exige a mudança nas permissões de centenas ou milhares de pastas e arquivos dentro de C:\Usuarios.
