@@ -48,7 +48,7 @@ Lista de arquivos que são removidos:
 ### ✨ CONTRIBUIÇÕES
 
 <details>
-<summary><strong>Clearing DISCORD cache by <a href="https://github.com/ravenastar-js/Script-que-substitui-o-CCleaner/commit/ec366ce7e425ba67476c8caa21159b81e0625f03">@wellerychaves</a></strong></summary>
+<summary><strong>Discord cache clear by <a href="https://github.com/ravenastar-js/Script-que-substitui-o-CCleaner/commit/ec366ce7e425ba67476c8caa21159b81e0625f03">@wellerychaves</a></strong></summary>
 
 ```batch
 REM ******************* Discord *******************
