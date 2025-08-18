@@ -42,3 +42,43 @@ Lista de arquivos que são removidos:
 💡 **Quer contribuir com o script?** Entre em contato com o proprietário do script, enviando uma mensagem para o e-mail 📧 `aurelio@baboo.com.br`
 
 🔗 [www.baboo.com.br/baboo](https://www.baboo.com.br/baboo)
+
+---
+
+### ✨ CONTRIBUIÇÕES
+
+<details>
+<summary><strong>Clearing DISCORD cache by <a href="https://github.com/ravenastar-js/Script-que-substitui-o-CCleaner/commit/ec366ce7e425ba67476c8caa21159b81e0625f03">@wellerychaves</a></strong></summary>
+
+```batch
+REM ******************* Discord *******************
+
+taskkill /F /IM "Discord.exe"
+
+for /d %%U in (C:\Users\*) do (
+    del %%U\AppData\Roaming\discord\Cache\* /s /q
+    del %%U\AppData\Roaming\discord\"Code Cache"\* /s /q
+    del %%U\AppData\Roaming\discord\GPUCache\* /s /q
+)
+
+REM ******************* Discord PTB *******************
+
+taskkill /F /IM "DiscordPTB.exe"
+
+for /d %%U in (C:\Users\*) do (
+    del %%U\AppData\Roaming\discordptb\Cache\* /s /q
+    del %%U\AppData\Roaming\discordptb\"Code Cache"\* /s /q
+    del %%U\AppData\Roaming\discordptb\GPUCache\* /s /q
+)
+
+REM ******************* Discord Canary *******************
+taskkill /F /IM "DiscordCanary.exe"
+
+for /d %%U in (C:\Users\*) do (
+    del %%U\AppData\Roaming\discordcanary\Cache\* /s /q
+    del %%U\AppData\Roaming\discordcanary\"Code Cache"\* /s /q
+    del %%U\AppData\Roaming\discordcanary\GPUCache\* /s /q
+)
+```
+
+</details>
