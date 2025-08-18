@@ -37,7 +37,7 @@ Lista de arquivos que são removidos:
 
 🌐 https://www.baboo.com.br/script
 
-📌 Não pretendo realizar nenhuma modificação no script. Ele foi copiado integralmente do site original.
+📌 Não pretendo realizar modificações "agressivas" no script. Ele foi copiado integralmente do site original.
 
 💡 **Quer contribuir com o script?** Entre em contato com o proprietário do script, enviando uma mensagem para o e-mail 📧 `aurelio@baboo.com.br`
 
